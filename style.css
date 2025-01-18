@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#f2f2f2;
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.all{
+    width:930px;
+    height:570px;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
+
+.box-1{
+    width:calc(930px / 3);
+    height:100%;
+    background-color:#D97925;
+    position:relative;
+}
+
+.box-2{
+    width:calc(930px / 3);
+    height:100%;
+    background-color:hsl(184, 100%, 22%);
+    position:relative;
+}
+
+.box-3{
+    /* width:315px; */
+    width:calc(930px / 3);
+    height:100%;
+    background-color:hsl(179, 100%, 13%);
+    position:relative;
+}
+
+.content-1 , .content-2 , .contetn-3{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:90%;
+    height:90%;
+    position:relative;
+    /* background-color:red; */
+}
+
+svg , h1 , p , button{
+    margin-left:30px;
+    margin-top:15px;
+}
+
+h1{
+    color:#f2f2f2;
+    font-family: "Big Shoulders Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size:45px;
+    margin-top:35px;
+}
+
+p{
+    color:#ffffffbf;
+    font-family: "Lexend Deca", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    line-height:33px;
+    padding-right:30px;
+    font-weight:300;
+    margin-top:35px;
+}
+
+button{
+    position:absolute;
+    bottom:3%;
+    font-family: "Lexend Deca", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding:13px 30px;
+    border-radius:30px;
+    border:none;
+    font-weight:500;
+    font-size:17px;
+    transition:.5s;
+    border:solid 3px #f2f2f2;
+    cursor:pointer;
+}
+
+
+
+#btn-1{
+    color:#D97925;
+}
+#btn-1:hover{
+    color:#f2f2f2;
+}
+
+#btn-2{
+    color:hsl(184, 100%, 22%);
+}
+#btn-2:hover{
+    color:#f2f2f2;
+}
+
+#btn-3{
+    color:hsl(179, 100%, 13%);
+}
+#btn-3:hover{
+    color:#f2f2f2;
+}
+
+button:hover{
+    background-color:transparent;
+}
+
+@media (max-width:940px){
+    body{
+        height:auto;
+        width:auto;
+    }
+
+    .all{
+        flex-direction:column;
+        /* overflow:visible; */
+        height:auto;
+        width:auto;
+        margin-top:65px;
+        margin-bottom:65px;
+    }
+
+    .box-1 , .box-2 , .box-3{
+        height:500px;
+        width:350px
+    }
+}
